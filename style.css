@@ -7,6 +7,7 @@
     border-radius: 10px;
     box-shadow: 0 0 1px 0;
     margin-top: 150px;
+    position: relative;
 }
 .yel{
     margin-top: 0px;
@@ -35,14 +36,44 @@ margin-top: 13px;
     width: 25px;
     height: 15px;
 }
-.type-todo{
+
+.list{
     width: 276px;
-    height: 35px;
+    height: 40px;
     margin: 10px 30px 80px 30px;
     border: 1px solid #C4C4C4;
     border-radius: 10px ;
     box-shadow: 0 0 1px 0;
 }
-.type-x{
+.type{
+    position: relative;
     display: flex;
+    flex-direction: row;
+}
+.list-text{
+    width: 200px;
+    height: 33px;
+    border: none;
+    margin: 3px 15px 0px 15px;
+    font-size: 16px;
+}
+.x{
+    border: 0px;
+    background: none; 
+    position: absolute;
+    right: 15px;
+    top: 7px;
+}
+.x-image{
+    width: 23px;
+    height: 23px;   
+}
+.add{
+    border: 0px;
+    background: none;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    bottom: 16px;
+      
 }
