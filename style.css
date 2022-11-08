@@ -35,8 +35,15 @@ margin-top: 13px;
     margin-top: -15px;
     width: 25px;
     height: 15px;
+    position: relative;
 }
-
+.sort2-image{
+    margin-top: -15px;
+    width: 25px;
+    height: 15px;
+    position: absolute;
+    display: none;
+}
 .list{
     width: 276px;
     height: 40px;

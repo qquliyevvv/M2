@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+      <script>
+const sort2 = document.querySelector('.sort2-image');
+function shdet() {
+sort2.style.display = 'block';
+}
+sort2.addEventListener('mouseover', shdet);
+
+    </script>
   <meta charset="UTF-8">
   <title>ToDoList</title>
   <link href="./style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <script src="./scripts.js"></script>
+
     <div class="wrapper">
         <div class="yel">
         </div>
         <p class="todo">To-Do List</p>
-        <button class="sort">  <img src="./images/sort.svg" class="sort-image" alt="Not found"></button>
+        <button class="sort">  <img src="./images/sort.svg" class="sort-image" alt="Not found" onmouseover=this.src="./images/sort2.svg" class="sort2-image" alt="Not found" onmouseout=this.src="./images/sort.svg" alt="Not found">
+        </button>
         <div class="list">
         <div class="type"><input class="list-text" type="text" ><button class="x"><img src="./images/x.svg" class="x-image" alt="Not found"></button>
           </div>
