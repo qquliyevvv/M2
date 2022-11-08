@@ -73,7 +73,13 @@ margin-top: 13px;
 }
 .x-image{
     width: 23px;
-    height: 23px;   
+    height: 23px; 
+    position: relative;  
+}
+.x2-image{
+    width: 23px;
+    height: 23px;  
+    position: absolute;
 }
 .add{
     border: 0px;
