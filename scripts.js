@@ -2,7 +2,8 @@ const sort =document.querySelector('.sort');
 const sort2 =document.querySelector('.sort2');
 const addbut = document.querySelector('.add');
 const input = document.querySelector('.list');
-const del = document.querySelector('.x');
+const typex = document.querySelector('.type');
+const del = document.querySelectorAll('.x');
 
 function changebut() {
 sort.style.display = 'none';
@@ -21,8 +22,4 @@ function add() {
     input.appendChild(p);
      }
 addbut.addEventListener('click',add);
-function deleted() {
-    input.removeChild(p);
-    p.remove();
-    }
-del.addEventListener('click',deleted);
+del.addEventListener('click',(event) => { event.target.parentElement.parentElement.remove();});
