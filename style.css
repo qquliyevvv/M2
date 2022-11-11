@@ -88,9 +88,16 @@ margin-top: 13px;
     height: 33px;
     border: none;
     margin: 3px 15px 0px 15px;
-    font-size: 16px;
+    font-size: 14px;
 }
 .x{
+    border: 0px;
+    background: none; 
+    position: absolute;
+    right: 15px;
+    top: 7px;
+}
+.x2{
     border: 0px;
     background: none; 
     position: absolute;
