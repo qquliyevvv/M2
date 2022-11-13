@@ -83,7 +83,7 @@ margin-top: 13px;
 .typenew{
     display: flex;
     flex-direction: column;
-    margin: 0 auto 2px auto;
+    margin: 0 auto 4px auto;
 }
 .type{
     position: relative;

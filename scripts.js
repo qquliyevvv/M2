@@ -7,6 +7,7 @@ let listtxt =document.querySelectorAll('.list-text');
 let del = document.querySelector('.x2');
 let xr = document.querySelector('.x');
 let text=document.querySelector('.type');
+new Sortable(text);
 function changebut() {
 sort.style.display = 'none';
 sort2.style.display = 'flex';
@@ -25,7 +26,6 @@ function add() {
     input.appendChild(p);
     del = document.querySelectorAll('.x2');  
     removeFunc();
-
 }    
 addbut.addEventListener('click',add);
 function removeFunc() {
