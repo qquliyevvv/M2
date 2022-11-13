@@ -3,8 +3,10 @@ const sort2 =document.querySelector('.sort2');
 const addbut = document.querySelector('.add');
 const input = document.querySelector('.list');
 const typex = document.querySelector('.typenew');
+let listtxt =document.querySelectorAll('.list-text');
 let del = document.querySelector('.x2');
-
+let xr = document.querySelector('.x');
+let text=document.querySelector('.type');
 function changebut() {
 sort.style.display = 'none';
 sort2.style.display = 'flex';
@@ -23,6 +25,7 @@ function add() {
     input.appendChild(p);
     del = document.querySelectorAll('.x2');  
     removeFunc();
+
 }    
 addbut.addEventListener('click',add);
 function removeFunc() {
@@ -32,3 +35,31 @@ function removeFunc() {
         });
 });
 }
+xr.onclick = function() {
+
+    document.querySelector(".input1").value = "";
+    document.querySelector(".input1").readOnly=false;
+  }
+input.addEventListener('keydown', function(event) {
+    if (event.code == 'Enter') {
+        input.scrollBy(0,10000);
+         listtxt =document.querySelectorAll('.list-text');
+        listtxt.forEach((item)=>{
+       item.readOnly=true;
+})
+    }});
+let sortarr=[...document.querySelectorAll('.type')];
+function sortbyin(){
+sortarr=[...document.querySelectorAll('.type')].sort((a, b) => {
+    if (a.innerText < b.innerText) {
+      return -1;
+    }
+    if (a.innerText > b.innerText) {
+      return 1;
+    }
+  
+    return 0;
+  });}
+sort.addEventListener('click', () => {
+    sortarr.forEach(elem => input.append(elem));
+});

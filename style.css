@@ -26,18 +26,22 @@ text-align: center;
 margin-top: 13px;
 }
 .sort{
-    width: 310px;
+    width: 25px;
+    margin-left: 285px;
     border: 0px;
     background: none;
     display: flex;
     justify-content: flex-end;
+    cursor: pointer;
 }
 .sort2{
-    width: 310px;
+    width: 25px;
+    margin-left: 285px;
     border: 0px;
     background: none;
     display: none;
     justify-content: flex-end;
+    cursor: pointer;
 }
 .sort3-image{
     margin-top: -15px;
@@ -73,36 +77,50 @@ margin-top: 13px;
     border: 1px solid #C4C4C4;
     border-radius: 10px ;
     box-shadow: 0 0 1px 0;
+    overflow-y: auto;
+    scroll-snap-type: mandatory;
 }
 .typenew{
     display: flex;
     flex-direction: column;
+    margin: 0 auto 2px auto;
 }
 .type{
     position: relative;
     display: flex;
     flex-direction: row;
+    margin-left: 0px;
 }
 .list-text{
     width: 200px;
     height: 33px;
     border: none;
-    margin: 3px 15px 0px 15px;
-    font-size: 14px;
+    margin: 3px 15px 0px 10px;
+    padding: 0 0 0 5px;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 20px;
+    outline: none;
+}
+.list-text:hover{
+    background-color: #C4C4C4;
+    cursor: grab;
 }
 .x{
     border: 0px;
     background: none; 
     position: absolute;
-    right: 15px;
+    right: 11px;
     top: 7px;
+    cursor: pointer;
 }
 .x2{
     border: 0px;
     background: none; 
     position: absolute;
-    right: 15px;
+    right: 11px;
     top: 7px;
+    cursor: pointer;
 }
 .x-image{
     width: 23px;
@@ -117,9 +135,9 @@ margin-top: 13px;
 .add{
     border: 0px;
     background: none;
-    width: 100%;
-    margin: auto;
+    width: 50px;
+    margin: auto auto auto 90px;
     position: absolute;
     bottom: 16px;
-      
+    cursor: pointer;    
 }
