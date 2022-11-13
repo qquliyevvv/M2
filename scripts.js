@@ -6,7 +6,7 @@ const typex = document.querySelector('.typenew');
 let listtxt =document.querySelectorAll('.list-text');
 let del = document.querySelector('.x2');
 let xr = document.querySelector('.x');
-let text=document.querySelector('.type');
+let text=document.querySelector('.list');
 new Sortable(text);
 function changebut() {
 sort.style.display = 'none';
