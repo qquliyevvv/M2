@@ -26,13 +26,13 @@ function add() {
   input.appendChild(p);
   del = document.querySelectorAll('.x2');  
   console.log(document.querySelectorAll('.type'));
+  input.scrollBy(0,10000);
   removeFunc();
-  // console.log(inputs)
-  // console.log(sortarr)
 }    
 addbut.addEventListener('click',add);
 function removeFunc() {
         del.forEach((item) => {
+          // if(item)
           item.addEventListener('click', (event)=> {
             event.target.parentElement.parentElement.remove();
           });
@@ -47,9 +47,7 @@ function removeFunc() {
     if (event.code == 'Enter') {
         input.scrollBy(0,10000);
          listtxt =document.querySelectorAll('.list-text');
-        listtxt.forEach((item)=>{
-       item.readOnly=true;
-})
+       event.target.readOnly=true;
     }});
 
 function sortbyin(){
